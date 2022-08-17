@@ -1,5 +1,5 @@
 dataset_images = "./data/Flicker8k_Dataset"
-dataset_text = "./data/Flickr8k_text/Flickr8k.token.txt"
+dataset_text = "./data/Flickr8k_text"
 
 # Load text file
 def load_doc(filename):

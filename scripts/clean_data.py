@@ -67,7 +67,7 @@ def save_descriptions(descriptions, filename):
 
 # load the data file
 # Format of descriptions is {img_name : [list of 5 captions]}
-descriptions = get_descriptions(dataset_text)
+descriptions = get_descriptions(dataset_text + "/Flickr8k.token.txt")
 print("Length of descriptions =", len(descriptions))
 
 # cleaning the descriptions
