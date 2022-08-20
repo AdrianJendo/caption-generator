@@ -1,19 +1,5 @@
 import string
-from helpers import dataset_text, load_doc
-
-
-# Get all images with captions
-def get_descriptions(filename):
-    file = load_doc(filename)
-    captions = file.split("\n")
-    descriptions = {}
-    for caption in captions[:-1]:
-        img, caption = caption.split("\t")
-        if img[:-2] not in descriptions:
-            descriptions[img[:-2]] = [caption]
-        else:
-            descriptions[img[:-2]].append(caption)
-    return descriptions
+from helpers import dataset_text, get_descriptions
 
 
 # Data cleaning - lower case, no punctiation, remove words with numbers

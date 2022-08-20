@@ -9,6 +9,10 @@ numpy = "*"
 keras = "*"
 pillow = "*"
 tqdm = "*"
+pydot = "*"
+pydotplus = "*"
+graphviz = "*"
+matplotlib = "*"
 
 [dev-packages]
 
